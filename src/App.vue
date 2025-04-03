@@ -1,47 +1,21 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import ChampieList from './components/ChampieList.vue'
+import ChampieSearch from './components/ChampieSearch.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div
+    class="bg-amber-200 dark:bg-sky-900 dark:text-white font-serif pb-8 cursor-default min-h-screen"
+  >
+    <header
+      class="py-4 px-8 bg-amber-300 dark:bg-sky-950 sticky top-0 z-10 flex justify-between items-center"
+    >
+      <h1 class="text-2xl font-black uppercase">Champie tool</h1>
+      <ChampieSearch />
+    </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <main>
+      <ChampieList />
+    </main>
+  </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
