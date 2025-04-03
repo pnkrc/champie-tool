@@ -19,13 +19,13 @@ function toggleBoxFilter(boxName: string) {
 </script>
 
 <template>
-  <div class="flex gap-4 text-xs font-normal p-8">
-    <ul class="flex flex-wrap gap-2 items-center">
-      <label class="uppercase mr-4 font-bold">Region:</label>
+  <div class="flex gap-4 p-8 text-xs font-normal">
+    <ul class="flex flex-wrap items-center gap-2">
+      <label class="mr-4 font-bold uppercase">Region:</label>
       <li
         v-for="(boxName, index) in props.boxNames"
         :key="index"
-        class="bg-amber-100 dark:bg-sky-700 hover:bg-amber-300 hover:dark:bg-sky-800 rounded-full px-4 py-1 cursor-pointer"
+        class="cursor-pointer rounded-full bg-amber-100 px-4 py-1 hover:bg-amber-300 dark:bg-sky-700 hover:dark:bg-sky-800"
         :class="{
           'bg-amber-400 dark:bg-sky-950': boxFilters.includes(boxName),
         }"

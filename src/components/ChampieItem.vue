@@ -12,7 +12,7 @@ const emit = defineEmits(['onSelect'])
 <template>
   <div class="group" @click="emit('onSelect', props.name)" aria-role="button">
     <p
-      class="group-hover:italic break-inside-avoid"
+      class="break-inside-avoid group-hover:italic"
       :class="{
         'text-sky-400': props.acquired,
       }"

@@ -41,13 +41,13 @@ const shouldShowBox = computed(() => {
 <template>
   <div
     v-if="shouldShowBox"
-    class="break-inside-avoid shadow-md border-2 border-yellow-600 bg-amber-100 dark:bg-sky-950 overflow-auto"
+    class="break-inside-avoid overflow-auto border-2 border-yellow-600 bg-amber-100 shadow-md dark:bg-sky-950"
   >
     <ChampieGroupProgress
       :acquired="props.champies.filter((champie) => champie.acquired).length"
       :total="props.champies.length"
     />
-    <h2 class="text-xl text-center font-bold italic uppercase mt-4 text-yellow-600">
+    <h2 class="mt-4 text-center text-xl font-bold text-yellow-600 uppercase italic">
       {{ props.name }}
     </h2>
     <div class="champie-list columns-2 gap-4 p-4">

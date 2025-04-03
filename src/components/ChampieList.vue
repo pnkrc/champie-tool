@@ -48,7 +48,7 @@ function onSelect(champieName: string) {
       :total="IconBoxes.reduce((acc, box) => acc + box.icons.length, 0)"
     />
     <BoxFilter :boxNames="IconBoxes.map((box) => box.name)" />
-    <div class="px-8 gap-4 columns-1 md:columns-2 xl:columns-3 2xl:columns-4 *:mb-4">
+    <div class="columns-1 gap-4 px-8 *:mb-4 md:columns-2 xl:columns-3 2xl:columns-4">
       <ChampieGroup
         v-for="(box, index) in champies"
         :key="index"

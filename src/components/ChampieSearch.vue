@@ -20,7 +20,7 @@ function onEscape() {
       type="text"
       v-model="search"
       placeholder="Search for a champie..."
-      class="w-full rounded-full px-4 py-2 bg-amber-100 dark:bg-sky-800"
+      class="w-full rounded-full bg-amber-100 px-4 py-2 dark:bg-sky-800"
       @input="setNameFilter(search)"
       @keydown.escape="onEscape()"
     />
