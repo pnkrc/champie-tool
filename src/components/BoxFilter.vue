@@ -19,9 +19,9 @@ function toggleBoxFilter(boxName: string) {
 </script>
 
 <template>
-  <div class="flex gap-4 p-8 text-xs font-normal">
+  <div class="flex items-center gap-4 p-8 text-xs font-normal">
+    <label class="font-bold uppercase">Region:</label>
     <ul class="flex flex-wrap items-center gap-2">
-      <label class="mr-4 font-bold uppercase">Region:</label>
       <li
         v-for="(boxName, index) in props.boxNames"
         :key="index"
@@ -30,7 +30,6 @@ function toggleBoxFilter(boxName: string) {
           'bg-amber-400 dark:bg-sky-950': boxFilters.includes(boxName),
         }"
         @click="toggleBoxFilter(boxName)"
-        aria-role="button"
       >
         <p>{{ boxName }}</p>
       </li>

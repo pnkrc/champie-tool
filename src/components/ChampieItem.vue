@@ -10,7 +10,7 @@ const emit = defineEmits(['onSelect'])
 </script>
 
 <template>
-  <div class="group" @click="emit('onSelect', props.name)" aria-role="button">
+  <div class="group" @click="emit('onSelect', props.name)">
     <p
       class="break-inside-avoid group-hover:italic"
       :class="{

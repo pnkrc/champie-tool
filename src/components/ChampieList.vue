@@ -19,7 +19,6 @@ const champies = computed(() => {
     if (boxFilters.value.length === 0) return true
     return boxFilters.value.includes(box.name)
   }).map((box) => {
-    console.log('box', box)
     return {
       name: box.name,
       icons: box.icons.map((icon) => {
