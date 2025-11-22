@@ -49,6 +49,7 @@ export const IconBoxes: Array<Box> = [
       'Sylas Champie Icon',
       'Vayne Champie Icon',
       'Xin Zhao Champie Icon',
+      'Xin Zhao II Champie Icon',
     ],
   },
   {
@@ -97,6 +98,7 @@ export const IconBoxes: Array<Box> = [
       'Xayah Champie Icon',
       'Yasuo Champie Icon',
       'Yone Champie Icon',
+      'Yunara Champie Icon',
       'Zed Champie Icon',
     ],
   },
@@ -116,6 +118,7 @@ export const IconBoxes: Array<Box> = [
   {
     name: 'Noxus',
     icons: [
+      'Ambessa Champie Icon',
       'Briar Champie Icon',
       'Cassiopeia Champie Icon',
       'Darius Champie Icon',
@@ -124,6 +127,7 @@ export const IconBoxes: Array<Box> = [
       'Kled Champie Icon',
       'Leblanc Champie Icon',
       'Leblanc Champie Icon II',
+      'Mel Champie Icon',
       'Mordekaiser Champie Icon',
       'Rell Champie Icon',
       'Riven Champie Icon',
@@ -186,6 +190,7 @@ export const IconBoxes: Array<Box> = [
       'Shaco Champie Icon',
       'Smolder Champie Icon',
       'Tahm Kench Champie Icon',
+      'Zaahen Champie Icon',
       'Zilean Champie Icon',
     ],
   },
